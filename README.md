@@ -3,6 +3,8 @@ Authors:
 
     Christopher Del Fierro (silenttype)    
     John Angelo Lipata (fakeJAVL)
+    
+![pea](https://user-images.githubusercontent.com/32733587/52629010-ce9f7c80-2ef3-11e9-99ee-a92077df4447.png)
  
 PEA is a python script used to decode and extract PowerShell codes in clear text – executed in an isolated environment generating a report outlining the behavior of the executed PowerShell commands.
 
