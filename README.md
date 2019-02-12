@@ -19,13 +19,16 @@ Malware Sample -> PEA.PY = Analysis.csv and Scriptblock.txt
 
 This proof-of-concept tool was presented in AVAR 2018 Goa, India titled *Cracking the Shell: Cutting the Analysis Time of PowerShell Attacks Using Sandbox and Advanced Logging.*
 
-## 1. USAGE
+## 1. INSTALLATION and USAGE
 
-Pea.py [sample]
+### 1.1 Installation:
+Simply download the whole repository and have PEA executed in a shell.
+
+Python Pea.py [sample]
 
     Example:
 
-    Pea.py '/home/gab/_virus/MalwareUsingPS/emotet.doc
+    $ Python3 Pea.py '/home/gab/_virus/MalwareUsingPS/emotet.doc
 
 PEA will attempt to identify and supply the correct file format of the submitted file.
 
@@ -36,7 +39,7 @@ Outputs:
     •	scriptblock.txt – script blocks representation of invoked PowerShell codes
     •	analysis.csv – CSV output of dissected PowerShell commands, urls, IOCs, shellcodes, descriptions, script artifacts and many more
 
-### 1.1 Supported MimeTypes:
+### 1.2 Supported MimeTypes:
     •	application/msword (.DOC)  
     •	application/vnd.openxmlformats-officedocument.wordprocessingml.document (.DOCX)
     •	application/x-dosexec(.EXE)  
@@ -86,7 +89,7 @@ Requirements will be split into two: Host and Guest. Since this is a PoC to begi
 1.	Locate PEA.INI and adjust the settings as you see fit
 ![peaini](https://user-images.githubusercontent.com/32733587/52629220-2e962300-2ef4-11e9-838a-a4f5bda2e029.png)
 
-## 4 BUGS and LIMITATIONS
+## 4. BUGS and LIMITATIONS
 PEA is not perfect and may have some/many bugs. Contact us for bugs, but there will be no promises for any updates as of the moment.
 
 Some identified limitations are:
