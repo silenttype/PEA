@@ -49,6 +49,8 @@ Outputs:
     •	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet(.XLSX)  
   
   Technically, even if the mimetype of the submitted sample is not listed above, as long as the submitted file is renamed with proper extension (e.g. sample.ps1), PEA will process this sample accordingly. Just make sure that the default application that will be invoked by the sample inside the VM is installed (e.g. submitted sample.DOC needs Microsoft Word installed inside the sandbox).
+![outputpea](https://user-images.githubusercontent.com/32733587/52629192-1d4d1680-2ef4-11e9-963e-3d67f6a974f0.png)
+
 
 ## 2. REQUIREMENTS
 Requirements will be split into two: Host and Guest. Since this is a PoC to begin with, hard requirement is VMware Workstation non-negotiable. You can edit PEA to port it using any other virtualization software like VirtualBox, etc. 😊 
@@ -81,11 +83,13 @@ Requirements will be split into two: Host and Guest. Since this is a PoC to begi
 4.	Take a snapshot of the VM while running
 5.	Name your snapshot (e.g. PEA)
 ### 3.2 Configuring PEA
-1.	Locate PEA.INI and adjust as you see fit
-
+1.	Locate PEA.INI and adjust the settings as you see fit
+![peaini](https://user-images.githubusercontent.com/32733587/52629220-2e962300-2ef4-11e9-838a-a4f5bda2e029.png)
 
 ## 4 BUGS and LIMITATIONS
-PEA is not perfect and may have some/many bugs
+PEA is not perfect and may have some/many bugs. Contact us for bugs, but there will be no promises for any updates as of the moment.
+
+Some identified limitations are:
 
     •	Malware that disables Enhanced Logging
     •	Malware that downgrades PowerShell version 
